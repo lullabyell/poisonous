@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Deadly Flora: A Guide to Poisonous Plants in Budapest - Form</title>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cpwebassets.codepen.io/assets/common"></script> -->
+</head>
+
+<body>
+    <a id="main-content" tabindex="-1"></a>
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    <header>
+        <button id="toggle-accessibility" class="accessibility-button">High Contrast</button>
+        <h1>Deadly Flora: A Guide to Poisonous Plants in Budapest</h1>
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Introduction</a></li>
+                <li><a href="poisonous_greenery.html">Poisonous Greenery</a></li>
+                <li><a href="staying_safe.html">Staying Safe</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-content">
+        <h2>Reporting Poisonous Plant Encounters</h2>
+        <form id="poisonousPlantForm"
+        action="https://formspree.io/f/xqkrzbav"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Click or tap here to enter text." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Click or tap here to enter text." required>
+
+            <label for="location">Location of Sighting:</label>
+            <input type="text" id="location" name="location" placeholder="Click or tap here to enter text." required>
+
+            <label for="date">Date of Sighting:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="description">Description of Plant:</label>
+            <textarea id="description" name="description" placeholder="Click or tap here to enter text." required></textarea>
+
+            <fieldset>
+                <legend>Was the Plant Touched?</legend>
+                <label for="touched-yes">
+                    <input type="radio" id="touched-yes" name="touched" value="Yes">
+                    Yes
+                </label>
+
+                <label for="touched-no">
+                    <input type="radio" id="touched-no" name="touched" value="No">
+                    No
+                </label>
+            </fieldset>
+            <div id="error-message"></div>
+
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Click or tap here to enter text."></textarea>
+
+            <label for="agree">Agree to Terms and Conditions:</label>
+            <input type="checkbox" id="agree" name="agree" checked>
+
+            <button type="submit" value="Submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Deadly Flora. All rights reserved.</p>
+        <div class="navigation-buttons">
+            <a href="staying_safe.html" class="page-button">Previous Page: Staying Safe</a>
+            </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
