@@ -4,7 +4,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-image: url('C:/Users/Muhlisakhon/OneDrive/Desktop/webdev/images/background.jpg'); /* Adjust the path accordingly */
+    background-image: url('background.jpg'); /* Adjust the path accordingly */
     background-size: cover; /* Ensures the image covers the entire background */
     background-repeat: no-repeat; 
     background-attachment: fixed;
